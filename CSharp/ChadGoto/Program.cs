@@ -20,8 +20,8 @@ void ChadGoTo()
 
 starthere: //i'll do all the job again and again counting to potatoes
 
-    sum += values[position];
-    if(position++ < values.Length-1)
+    sum += values[position++];
+    if(position < values.Length)
     {
         goto starthere;
     }
